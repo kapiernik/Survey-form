@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
@@ -40,10 +40,10 @@ form{
     flex-direction: column;
     flex-wrap: wrap;
     border: 0px solid #fff;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
-input{
+input, select, option{
     margin-top: 5px;
     margin-bottom: 20px;
     padding-left: 10px;
@@ -52,7 +52,9 @@ input{
     border: 1px solid aquamarine;
     border-radius: 3px;
     font-size: 20px;
+    color: #757579;
 }
+
 
 label{
     font-size: 25px;
