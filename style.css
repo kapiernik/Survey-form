@@ -1,34 +1,33 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
-
 body{
     background-image: url('img/background.jpg');
     background-color: aquamarine;
     background-repeat: no-repeat;
     background-size: 100%;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-#main{
+#main, #header{
     padding: 35px 0;
     padding-bottom: 0;
     background-color: rgba(138, 43, 226,.8);
     color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 #title{
     font-size: 24px;
-    font-weight: 200;
+    font-weight: 400;
+    text-align: center;
 }
 
 #description{
     margin: 15px 0;
     font-weight: 100;
     font-style: italic;
+    text-align: center;
 }
 
 form{
@@ -41,6 +40,7 @@ form{
     flex-wrap: wrap;
     border: 0px solid #fff;
     border-radius: 5px;
+    align-self: center;
 }
 
 input, select, option{
@@ -51,11 +51,29 @@ input, select, option{
     height: 35px;
     border: 1px solid aquamarine;
     border-radius: 3px;
-    font-size: 20px;
+    font-size: 15px;
     color: #757579;
 }
 
 
 label{
-    font-size: 25px;
+    font-size: 15px;
+}
+
+.form-item label {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-item span {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.form-item input{
+    width: 35px;
 }
