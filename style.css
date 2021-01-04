@@ -1,10 +1,11 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
 body{
-    background-image: url('img/background.jpg');
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     background-color: aquamarine;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -63,17 +64,29 @@ label{
 .form-item label {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .form-item span {
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     width: 100%;
     padding-left: 10px;
 }
 
 .form-item input{
-    width: 35px;
+    width: 15px;
+    height: 15px;
 }
+
+.plus{
+    font-size: 13px;
+    padding-left: 0;
+}
+
+.checkbox{
+    margin-top: 10px;
+}
+
+
